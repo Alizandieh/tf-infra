@@ -1,5 +1,5 @@
-module "brigge_lightsail" {
-  source            = "git@github.com:Alizandieh/tf-modules.git//modules/lightsail?ref=8d305dd"
+module "saha_lightsail" {
+  source            = "git@github.com:Alizandieh/tf-modules.git//modules/lightsail?ref=fc0b0cc"
   ssh_key_name      = "kuma_ssh"
   instance_name     = "uptime-kuma"
   availability_zone = "eu-west-1a"

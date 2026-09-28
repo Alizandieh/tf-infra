@@ -1,7 +1,7 @@
 module "saha_ses_cloudflare" {
-  source = "git@github.com:Alizandieh/tf-modules.git//modules/ses?ref=ace3eba"
+  source = "git@github.com:Alizandieh/tf-modules.git//modules/ses?ref=fc0b0cc"
 
-  domain_name       = "brigge.ai"
+  domain_name       = "ali-zandieh.com"
   cloudflare_domain = true
   zone_id           = "180960994600855ea567dfd9b73346f9"
   verify_dkim       = true

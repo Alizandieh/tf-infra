@@ -20,9 +20,9 @@ terraform {
   }
 }
 
-provider "cloudflare" {
-  api_token = jsondecode(data.aws_secretsmanager_secret_version.cf_token.secret_string)["api_token"]
-}
+#provider "cloudflare" {
+#  api_token = "1235456"
+#}
 
 provider "aws" {
   region = "eu-west-1"

@@ -41,15 +41,15 @@ output "cluster_endpoint" {
 #}
 
 output "lightsail_instance_static_ip" {
-  value = try(module.brigge_lightsail.static_ip, null)
+  value = try(module.saha_lightsail.static_ip, null)
 }
 
 #output "lightsail_instance_ssh_public_key" {
 #  description = "Public key of the Lightsail SSH key pair"
-#  value       = try(module.brigge_lightsail.ssh_public_key, null)
+#  value       = try(module.saha_lightsail.ssh_public_key, null)
 #}
 #
 #output "lightsail_instance_ssh_private_key" {
 #  description = "Private key of the Lightsail SSH key pair"
-#  value       = try(module.brigge_lightsail.ssh_private_key, null)
+#  value       = try(module.saha_lightsail.ssh_private_key, null)
 #}

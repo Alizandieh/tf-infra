@@ -56,7 +56,7 @@ module "db_dev" {
 
   username                    = "admin"
   manage_master_user_password = false
-  password_wo                 = jsondecode(data.aws_secretsmanager_secret_version.rds_dev_pass.secret_string)["password"]
+  password_wo                 = "testpass"
   password_wo_version         = 1
   port                        = 3306
   multi_az                    = false
@@ -107,7 +107,7 @@ module "db_dev_landlord" {
   db_name                     = "landlord"
   username                    = "admin"
   manage_master_user_password = false
-  password_wo                 = jsondecode(data.aws_secretsmanager_secret_version.rds_dev_pass.secret_string)["password"]
+  password_wo                 = "testpass"
   password_wo_version         = 1
   port                        = 3306
   multi_az                    = false

@@ -1,5 +1,5 @@
 module "saha_iam" {
-  source = "git@github.com:Alizandieh/tf-modules.git//modules/IAM?ref=8d305dd"
+  source = "git@github.com:Alizandieh/tf-modules.git//modules/IAM?ref=fc0b0cc"
 
   cluster_name          = module.saha_eks.cluster_name
   cert_manager_role     = true
@@ -17,4 +17,3 @@ module "saha_iam" {
   # loki_chunks_bucket_name = module.s3_bucket_loki_chunks.s3_bucket_id
   # loki_ruler_bucket_name  = module.s3_bucket_loki_ruler.s3_bucket_id
 }
-

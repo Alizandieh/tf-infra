@@ -1,5 +1,5 @@
 module "saha_eks" {
-  source = "git@github.com:Alizandieh/tf-modules.git//modules/EKS?ref=8d305dd"
+  source = "git@github.com:Alizandieh/tf-modules.git//modules/EKS?ref=fc0b0cc"
 
   platform                       = "saha-dev"
   cluster_version                = "1.36"
@@ -71,10 +71,10 @@ module "saha_eks" {
   devops_nodes_enable_monitoring = true
 
   tags = {
-    project       = "Brigge"
+    project       = "SAHA"
     region        = "eu-west-1"
     env           = "dev"
-    owner         = "Brigge"
+    owner         = "SAHA"
     user-mode     = "dedicated"
     TerraformRoot = "https://github.com/Alizandieh/tf-infra.git/eu-west-1-saha-dev"
   }
